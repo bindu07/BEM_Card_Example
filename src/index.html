@@ -1,0 +1,93 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Design using BEM Methodology</title>
+    <link rel="stylesheet" href="assets/scss/styles.css" />
+  </head>
+
+  <body>
+    <section class="card-container">
+      <article class="c-card">
+        <header class="c-card__header">
+          <img
+            src="assets/img/sample.jfif"
+            class="c-card__image"
+            alt="Card Image"
+          />
+        </header>
+
+        <div class="c-card__body">
+          <h2 class="c-card__title">Project Name</h2>
+          <p class="c-card__intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam
+            nanummy nibh euismand tinisind ay laaret dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+
+        <footer class="c-card__footer">
+          <i class="fas fa-arrow-right fa-2x"></i>
+        </footer>
+      </article>
+
+      <article class="c-card">
+        <header class="c-card__header">
+          <img
+            src="assets/img/sample.jfif"
+            class="c-card__image"
+            alt="Card Image"
+          />
+        </header>
+
+        <div class="c-card__body">
+          <h2 class="c-card__title">Project Name</h2>
+          <p class="c-card__intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam
+            nanummy nibh euismand tinisind ay laaret dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+
+        <footer class="c-card__footer">
+          <i class="fas fa-arrow-right fa-2x"></i>
+        </footer>
+      </article>
+    </section>
+
+
+    <!-- Inversing the same card structure with SASS with card--reversed -->
+
+    <section class="card-container">
+      <article class="c-card c-card--reversed">
+        <div class="c-card__body">
+          <h2 class="c-card__title">Project Name</h2>
+          <p class="c-card__intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam
+            nanummy nibh euismand tinisind ay laaret dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+
+        <footer class="c-card__footer">
+          <i class="fas fa-arrow-right fa-2x"></i>
+        </footer>
+      </article>
+
+      <div class="c-card c-card--reversed">
+        <div class="c-card__body">
+          <h2 class="c-card__title">Project Name</h2>
+          <p class="c-card__intro">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed diam
+            nanummy nibh euismand tinisind ay laaret dolore magna aliquam erat
+            volutpat.
+          </p>
+        </div>
+
+        <footer class="c-card__footer">
+          <i class="fas fa-arrow-right fa-2x"></i>
+        </footer>
+      </article>
+    </section>
+  </body>
+</html>

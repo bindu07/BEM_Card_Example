@@ -1,0 +1,75 @@
+ 
+// ----------------------------------------
+// !!CARD
+// ----------------------------------------
+
+// Sometimes you need a container or wrapper for your components in which case you could use a class like this
+// Important thing to understand here is that .c-card doesn't depend on .card-container
+//.card-container is a helper in this situation, it helps us to keep the cards together
+@import "_colors"
+@import "_fonts"
+@import url(https://use.fontawesome.com/releases/v5.7.0/css/all.css)
+
+.card-container
+  max-width: 900px
+  margin: 0 auto
+
+.c-card
+  $self: &
+  display: inline-block
+  width: 100%
+  max-width: 350px
+  margin: 20px
+  transition: all 0.3s ease
+  text-align: left
+  background: $primary_white
+  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2)
+  border-radius: 3%
+  font-family: MONOSPACE
+
+
+  &__header
+    height: 220px
+         
+  
+  &__image
+    max-width: 100%
+    border-radius: 5%
+ 
+  &__body
+    padding: 20px
+    
+  &__title
+    font-size: 2.5em
+    font-weight: 700
+    line-height: 1.2
+    margin: 0
+    padding: 0
+    color: $teal_label
+
+  &__intro
+    margin-bottom: 0
+    font-size: 1em
+
+  &__footer
+    padding: 20px
+    cursor: pointer
+    color: $teal_label
+    font-size: .75em
+
+
+
+  &--reversed 
+    background: $dark_bg
+    color: $dark_label
+
+    #{ $self }__title
+          color: $lite_label
+
+    #{ $self }__footer
+          color: $lite_label
+    
+    
+    
+
+    

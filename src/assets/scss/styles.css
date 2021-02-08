@@ -1,0 +1,78 @@
+@import url(https://use.fontawesome.com/releases/v5.7.0/css/all.css);
+@font-face {
+  font-family: "OpenSans_Regular";
+  src: url("/fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans_Bold";
+  src: url("/fonts/OpenSans-Bold.ttf") format("trueType");
+}
+
+.card-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.c-card {
+  display: inline-block;
+  width: 100%;
+  max-width: 350px;
+  margin: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: left;
+  background: #f7f7f7;
+  -webkit-box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
+  border-radius: 3%;
+  font-family: MONOSPACE;
+}
+
+.c-card__header {
+  height: 220px;
+}
+
+.c-card__image {
+  max-width: 100%;
+  border-radius: 5%;
+}
+
+.c-card__body {
+  padding: 20px;
+}
+
+.c-card__title {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: #62c7c7;
+}
+
+.c-card__intro {
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.c-card__footer {
+  padding: 20px;
+  cursor: pointer;
+  color: #62c7c7;
+  font-size: .75em;
+}
+
+.c-card--reversed {
+  background: #62c7c7;
+  color: #393939;
+}
+
+.c-card--reversed .c-card__title {
+  color: #f7f7f7;
+}
+
+.c-card--reversed .c-card__footer {
+  color: #f7f7f7;
+}
+/*# sourceMappingURL=styles.css.map */
